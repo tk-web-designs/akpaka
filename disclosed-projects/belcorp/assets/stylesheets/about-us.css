@@ -1,0 +1,1257 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #1e1e1e;
+  font-family: "Inter", sans-serif;
+  line-height: 150%;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.95rem;
+}
+
+h3 {
+  font-size: 1.56rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container img {
+  height: 48.82px;
+  margin: 31.25px 0;
+}
+header .container nav ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  list-style-type: none;
+  gap: 31.25px;
+}
+header .container nav ul li {
+  cursor: pointer;
+}
+header .container nav ul li a {
+  color: #131313;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  cursor: pointer;
+}
+header .container nav ul li a:after {
+  content: "";
+  width: 0;
+  opacity: 0;
+  margin-top: 3.8px;
+  display: block;
+  padding: 1px;
+  background: #131313;
+  transition: all 0.3s ease;
+}
+header .container nav ul li a.active:after, header .container nav ul li a:hover:after {
+  width: 32px;
+  opacity: 1;
+}
+header .container .mobile-nav {
+  position: fixed;
+  top: 95px;
+  left: -401px;
+  width: 400px;
+  height: 100vh;
+  background: #fff;
+  z-index: 3;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+header .container .mobile-nav a {
+  color: #1e1e1e;
+}
+header .container .mobile-nav a:hover, header .container .mobile-nav a.active {
+  color: rgba(9, 29, 66, 0.77);
+}
+header .container .mobile-nav.active {
+  left: 0;
+}
+header .container .mobile-nav ul {
+  list-style-type: none;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+header .container #menuToggle {
+  display: none;
+  font-size: 2rem;
+}
+header .container #menuToggle .open {
+  display: block;
+}
+header .container #menuToggle .close {
+  display: none;
+  color: #091D42;
+}
+header .container #menuToggle.active .open {
+  display: none;
+}
+header .container #menuToggle.active .close {
+  display: block;
+}
+
+section.hero {
+  background: url("/assets/images/about-us/hero.jpg");
+  position: relative;
+}
+section.hero:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+section.hero .container {
+  height: 35vh;
+  display: grid;
+  place-items: center;
+}
+section.hero .container h1 {
+  color: #fff;
+  width: 100%;
+  line-height: 110%;
+  z-index: 1;
+}
+
+section.stats .container {
+  padding: 61px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 48%);
+  justify-content: space-between;
+  border-bottom: 1px solid #1e1e1e;
+}
+section.stats .left {
+  background: #f3f3f3;
+}
+section.stats .right {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 2rem;
+}
+section.stats .right h2 {
+  line-height: 130%;
+}
+section.stats .right h2 span {
+  color: rgba(9, 29, 66, 0.77);
+}
+
+section.about-us .container {
+  padding: 61px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 48%);
+  justify-content: space-between;
+}
+section.about-us .left h2 {
+  margin-bottom: 1rem;
+}
+section.about-us .left p {
+  text-align: justify;
+}
+section.about-us .right img {
+  width: 100%;
+}
+
+section.mission .container {
+  padding: 61px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: space-between;
+}
+section.mission .m1, section.mission .m2, section.mission .m3 {
+  padding: 32px 24px;
+  background: rgba(222, 227, 236, 0.5);
+}
+section.mission .m1 h5, section.mission .m2 h5, section.mission .m3 h5 {
+  margin-bottom: 1rem;
+  color: rgba(9, 29, 66, 0.77);
+  text-align: center;
+}
+section.mission .m1 p, section.mission .m2 p, section.mission .m3 p {
+  line-height: 150%;
+  text-align: justify;
+}
+section.mission .m1 ul, section.mission .m2 ul, section.mission .m3 ul {
+  list-style-position: inside;
+}
+
+section.approach .container {
+  padding: 61px 0;
+}
+section.approach h2 {
+  margin-bottom: 1.125rem;
+}
+section.approach h3 {
+  margin-bottom: 1rem;
+}
+section.approach .content {
+  display: grid;
+  grid-template-columns: repeat(2, 48%);
+  justify-content: space-between;
+  text-align: justify;
+}
+section.approach .content p {
+  margin-bottom: 1rem;
+}
+section.approach .content p.exception {
+  margin-bottom: unset;
+}
+section.approach .content img {
+  width: 100%;
+}
+
+section.staff {
+  background: rgba(9, 29, 66, 0.07);
+}
+section.staff .container {
+  padding: 61px 0;
+}
+section.staff .container .content {
+  display: flex;
+  justify-content: space-between;
+}
+section.staff .staff {
+  width: 22%;
+  display: inline-block;
+  border-top: 2px solid #091D42;
+  position: relative;
+  padding: 55px 24px 61px 24px;
+  background: #fff;
+}
+section.staff .staff img {
+  width: 61px;
+  height: 61px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  top: -30.5px;
+}
+section.staff .staff h5 {
+  text-align: center;
+  margin-bottom: 0.6rem;
+}
+section.staff .staff p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+section.staff .staff strong {
+  text-align: justify;
+  font-weight: 500;
+}
+section.staff .staff .social-icons {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+section.staff .staff .social-icons img {
+  width: unset;
+  height: unset;
+  position: unset;
+  border-radius: unset;
+}
+
+footer {
+  color: #fff;
+  background: #091D42;
+}
+footer a {
+  color: #fff;
+}
+footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+}
+footer .row-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: space-between;
+  padding: 40px 0 80px 0;
+}
+footer .row-1 .social-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 0px;
+  font-size: 1.125rem;
+}
+footer .row-1 .col-3 ul {
+  gap: 21.3px;
+}
+footer .row-1 .col-3 ul li, footer .row-1 .col-3 ul a {
+  display: grid;
+  grid-template-columns: max-content auto;
+  gap: 8px;
+}
+footer .row-1 form {
+  grid-column: 3/4;
+}
+footer .row-1 form label {
+  font-size: 14px;
+  display: block;
+}
+footer .row-1 form input, footer .row-1 form button {
+  padding: 8px;
+  min-height: 44px;
+  margin-top: 8px;
+}
+footer .row-1 form input {
+  margin-right: 2px;
+}
+footer .row-1 form button {
+  border: none;
+  background: #000;
+  font-weight: 600;
+  color: #fff;
+  padding: 8px 16px;
+}
+footer .copyright {
+  padding: 16px 0;
+  text-align: center;
+  background: #fff, rgba(9, 29, 66, 0.77);
+}
+
+@media only screen and (max-width: 1100px) {
+  header .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  header .container img {
+    height: 48.82px;
+    margin: 31.25px 0;
+  }
+  header .container nav ul {
+    gap: 16px;
+  }
+  section.services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  section.services .service h5 {
+    height: 3.81rem;
+    margin-bottom: 1.125rem;
+    position: relative;
+    z-index: 1;
+  }
+  section.recent-projects h2 {
+    margin-bottom: 32px;
+    position: relative;
+    z-index: 1;
+  }
+  section.recent-projects .container {
+    padding: 40px 0;
+  }
+  section.recent-projects .projects {
+    display: grid;
+    grid-template-columns: repeat(3, calc(33% - 10.66px));
+    gap: 16px;
+    color: #fff;
+  }
+  section.recent-projects .projects .project {
+    padding: 4rem 24px 32px 24px;
+    position: relative;
+    height: auto;
+    min-height: 13rem;
+    position: relative;
+  }
+  section.recent-projects .projects .project p {
+    position: relative;
+    z-index: 1;
+  }
+  section.recent-projects .projects .project a {
+    color: #fff;
+    display: flex;
+    gap: 0px;
+    font-weight: 600;
+    margin-top: 8px;
+    transition: all 0.2s ease;
+    align-content: center;
+    position: absolute;
+    left: 24px;
+    bottom: 16px;
+    z-index: 1;
+  }
+  section.recent-projects .projects .project a:hover {
+    gap: 3px;
+  }
+  section.recent-projects .projects .project-2 {
+    background: url("/assets/images/projects/bonga.jpg");
+  }
+  section.recent-projects .projects .project-3 {
+    background: url("/assets/images/services/system-packages.jpg");
+  }
+  section.recent-projects .projects .project-4 {
+    grid-column: 1/4;
+    text-align: center;
+  }
+  section.recent-projects .projects .project-4 a {
+    display: inline-flex;
+    margin: auto;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+  section.recent-projects .projects .project {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  section.recent-projects .projects .project:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(9, 29, 66, 0.7);
+    z-index: 0;
+  }
+}
+@media only screen and (max-width: 900px) {
+  header .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  header .container img {
+    height: 39.06px;
+    margin: 25px 0;
+  }
+  header .container nav ul {
+    display: none;
+  }
+  header .container #menuToggle {
+    display: block;
+  }
+  section.hero {
+    height: 50vw;
+    position: relative;
+    color: #fff;
+  }
+  section.hero .container {
+    height: 100%;
+    display: flex;
+    place-items: center;
+  }
+  section.hero .c-t-a {
+    display: flex;
+    gap: 8px;
+  }
+  section.hero .c-t-a a {
+    color: #fff;
+    padding: 20px 31.25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+  }
+  section.hero .c-t-a a.sec-c-t-a {
+    background: #000;
+  }
+  section.hero .c-t-a a.pri-c-t-a {
+    background: #091D42;
+  }
+  section.hero .c-t-a a.pri-c-t-a:hover {
+    background: #000;
+  }
+  section.hero .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.7s ease;
+  }
+  section.hero .bg-1 {
+    background: url("/assets/images/home/hero-bg/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  section.hero .bg-2 {
+    background: url("/assets/images/services/opex.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  section.hero .bg-2:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  section.hero .bg-3 {
+    background: url("/assets/images/services/system-packages.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  section.hero .bg-3:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  section.hero .bg-4 {
+    background: url("/assets/images/services/supply-chain-services.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  section.hero .bg-4:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  section.hero .bg-5 {
+    background: url("/assets/images/projects/amakpe-refinery.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  section.hero .bg-5:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  section.hero .bg-6 {
+    background: url("/assets/images/projects/bonga.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  section.hero .bg-6:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  section.hero .heading {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+  }
+  section.hero .heading h1 {
+    display: none;
+    max-width: 90%;
+    text-transform: uppercase;
+    line-height: 150%;
+  }
+  section.hero .heading h1:nth-last-of-type(1) {
+    display: block;
+  }
+  section.hero .heading p {
+    margin-bottom: 0.5rem;
+    max-width: 50%;
+    display: none !important;
+  }
+  section.hero .heading p:nth-last-of-type(1) {
+    display: block;
+  }
+  section.hero .heading .c-t-a {
+    top: 2.5rem;
+    display: none;
+  }
+  section.hero .heading .c-t-a:nth-last-of-type(1) {
+    display: flex;
+  }
+  section.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section.services .service h5 {
+    height: 3.81rem;
+    margin-bottom: 1.125rem;
+    position: relative;
+    z-index: 1;
+  }
+  section.about-us .container {
+    padding: 61px 0;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 100%;
+  }
+  section.about-us .left {
+    width: 100%;
+  }
+  section.about-us .left h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  section.about-us .left p {
+    text-align: justify;
+    margin-bottom: 16px;
+    line-height: 150%;
+  }
+  section.about-us .left a {
+    display: inline-block;
+    padding: 24px 32px;
+    color: #fff;
+    background: #091D42;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  section.about-us .left a:hover {
+    background: #030a16;
+  }
+  section.about-us .right img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.recent-projects h2 {
+    margin-bottom: 32px;
+    position: relative;
+    z-index: 1;
+  }
+  section.recent-projects .container {
+    padding: 40px 0;
+  }
+  section.recent-projects .projects {
+    display: grid;
+    grid-template-columns: repeat(3, calc(33% - 10.66px));
+    gap: 16px;
+    color: #fff;
+  }
+  section.recent-projects .projects .project {
+    padding: 4rem 24px 32px 24px;
+    position: relative;
+    height: auto;
+    min-height: 16rem;
+    position: relative;
+  }
+  section.recent-projects .projects .project p {
+    position: relative;
+    z-index: 1;
+  }
+  section.recent-projects .projects .project a {
+    color: #fff;
+    display: flex;
+    gap: 0px;
+    font-weight: 600;
+    margin-top: 8px;
+    transition: all 0.2s ease;
+    align-content: center;
+    position: absolute;
+    left: 24px;
+    bottom: 16px;
+    z-index: 1;
+  }
+  section.recent-projects .projects .project a:hover {
+    gap: 3px;
+  }
+  section.recent-projects .projects .project-1 {
+    background: url("/assets/images/projects/amakpe-refinery.webp");
+  }
+  section.recent-projects .projects .project-2 {
+    background: url("/assets/images/projects/bonga.jpg");
+  }
+  section.recent-projects .projects .project-3 {
+    background: url("/assets/images/services/system-packages.jpg");
+  }
+  section.recent-projects .projects .project-4 {
+    grid-column: 1/4;
+    text-align: center;
+  }
+  section.recent-projects .projects .project-4 a {
+    display: inline-flex;
+    margin: auto;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+  section.recent-projects .projects .project {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  section.recent-projects .projects .project:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(9, 29, 66, 0.7);
+    z-index: 0;
+  }
+  footer {
+    color: #fff;
+    background: #091D42;
+  }
+  footer a {
+    color: #fff;
+  }
+  footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 16px;
+  }
+  footer .row-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+  }
+  footer .row-1 .social-links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 0px;
+    font-size: 1.125rem;
+  }
+  footer .row-1 .col-3 ul {
+    gap: 21.3px;
+  }
+  footer .row-1 .col-3 ul li, footer .row-1 .col-3 ul a {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 8px;
+  }
+  footer .row-1 form {
+    grid-column: 3/4;
+  }
+  footer .row-1 form label {
+    font-size: 14px;
+  }
+  footer .row-1 form input, footer .row-1 form button {
+    padding: 8px;
+    min-height: 44px;
+    margin-top: 8px;
+  }
+  footer .row-1 form input {
+    margin-right: 2px;
+  }
+  footer .row-1 form button {
+    border: none;
+    background: #000;
+    font-weight: 600;
+    color: #fff;
+    padding: 8px 16px;
+  }
+  footer .copyright {
+    padding: 16px 0;
+    text-align: center;
+    background: #fff, rgba(9, 29, 66, 0.77);
+  }
+}
+@media only screen and (max-width: 720px) {
+  h1 {
+    font-size: 1.95rem;
+  }
+  h2 {
+    font-size: 1.56rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 1.125rem;
+  }
+  section.hero {
+    height: 40vw;
+    position: relative;
+    color: #fff;
+  }
+  section.hero .container {
+    height: 100%;
+    display: flex;
+    place-items: center;
+  }
+  section.hero .c-t-a {
+    display: flex;
+    gap: 8px;
+  }
+  section.hero .c-t-a a {
+    color: #fff;
+    padding: 20px 31.25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+  }
+  section.hero .c-t-a a.sec-c-t-a {
+    background: #000;
+  }
+  section.hero .c-t-a a.pri-c-t-a {
+    background: #091D42;
+  }
+  section.hero .c-t-a a.pri-c-t-a:hover {
+    background: #000;
+  }
+  section.hero .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.7s ease;
+  }
+  section.hero .bg-1 {
+    background: url("/assets/images/home/hero-bg/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  section.hero .bg-2 {
+    background: url("/assets/images/services/opex.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  section.hero .bg-2:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  section.hero .bg-3 {
+    background: url("/assets/images/services/system-packages.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  section.hero .bg-3:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  section.hero .bg-4 {
+    background: url("/assets/images/services/supply-chain-services.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  section.hero .bg-4:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  section.hero .bg-5 {
+    background: url("/assets/images/projects/amakpe-refinery.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  section.hero .bg-5:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  section.hero .bg-6 {
+    background: url("/assets/images/projects/bonga.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  section.hero .bg-6:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  section.hero .heading {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+  }
+  section.hero .heading h1 {
+    display: none;
+    max-width: 100%;
+    text-transform: uppercase;
+    line-height: 150%;
+  }
+  section.hero .heading h1:nth-last-of-type(1) {
+    display: block;
+  }
+  section.hero .heading p {
+    margin-bottom: 0.5rem;
+    max-width: 50%;
+    display: none !important;
+  }
+  section.hero .heading p:nth-last-of-type(1) {
+    display: block;
+  }
+  section.hero .heading .c-t-a {
+    top: 2.5rem;
+    display: none;
+  }
+  section.hero .heading .c-t-a:nth-last-of-type(1) {
+    display: flex;
+  }
+  section.mission .container {
+    padding: 61px 0;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 16px;
+    justify-content: space-between;
+  }
+  section.mission .m1, section.mission .m2, section.mission .m3 {
+    padding: 32px 24px;
+    background: rgba(222, 227, 236, 0.5);
+  }
+  section.mission .m1 h5, section.mission .m2 h5, section.mission .m3 h5 {
+    margin-bottom: 1rem;
+    color: rgba(9, 29, 66, 0.77);
+    text-align: center;
+  }
+  section.mission .m1 p, section.mission .m2 p, section.mission .m3 p {
+    line-height: 150%;
+    text-align: justify;
+  }
+  section.mission .m1 ul, section.mission .m2 ul, section.mission .m3 ul {
+    list-style-position: inside;
+  }
+  section.approach .container {
+    padding: 61px 0;
+  }
+  section.approach h2 {
+    margin-bottom: 1.125rem;
+  }
+  section.approach h3 {
+    margin-bottom: 1rem;
+  }
+  section.approach .content {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1.25rem;
+  }
+  section.approach .content p {
+    margin-bottom: 1rem;
+  }
+  section.approach .content p.exception {
+    margin-bottom: unset;
+  }
+  section.approach .content img {
+    width: 100%;
+  }
+  section.staff {
+    background: rgba(9, 29, 66, 0.07);
+  }
+  section.staff .container {
+    padding: 61px 0;
+  }
+  section.staff .container .content {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 48% 48%;
+    row-gap: 4.5rem;
+  }
+  section.staff .staff {
+    width: 100%;
+    display: inline-block;
+    border-top: 2px solid #091D42;
+    position: relative;
+    padding: 55px 24px 61px 24px;
+    background: #fff;
+  }
+  section.staff .staff img {
+    width: 61px;
+    height: 61px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    top: -30.5px;
+  }
+  section.staff .staff h5 {
+    text-align: center;
+    margin-bottom: 0.6rem;
+  }
+  section.staff .staff p {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  section.staff .staff strong {
+    text-align: justify;
+    font-weight: 500;
+  }
+  section.staff .staff .social-icons {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  section.staff .staff .social-icons img {
+    width: unset;
+    height: unset;
+    position: unset;
+    border-radius: unset;
+  }
+}
+@media only screen and (max-width: 500px) {
+  section.clients img {
+    height: 32px;
+  }
+  section.clients .row-1, section.clients .row-2, section.clients .row-3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+  }
+  section.clients .client-6 {
+    background: #091D42;
+  }
+  section.services {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  section.services .service {
+    padding: 32px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+  }
+  section.services .service h5 {
+    height: 2.81rem;
+    margin-bottom: 1.125rem;
+    position: relative;
+    z-index: 1;
+  }
+  section.services .service p {
+    margin-bottom: 48px;
+    position: relative;
+    z-index: 1;
+  }
+  section.services .service a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0px;
+    color: #fff;
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.2s ease;
+    z-index: 1;
+  }
+  section.services .service a:hover {
+    gap: 3px;
+  }
+  section.services .service-1 {
+    background: url("/assets/images/services/project-management.jpg");
+  }
+  section.services .service-1:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(9, 29, 66, 0.7);
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+  section.services .service-2 {
+    background: url("/assets/images/services/system-packages.jpg");
+  }
+  section.services .service-2:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(9, 29, 66, 0.7);
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+  section.services .service-3 {
+    background: url("/assets/images/services/supply-chain-services.jpg");
+  }
+  section.services .service-3:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(9, 29, 66, 0.7);
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+  section.services .service-4 {
+    background: url("/assets/images/services/opex.jpg");
+  }
+  section.services .service-4:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(9, 29, 66, 0.7);
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+  section.services .service {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  section.recent-projects h2 {
+    margin-bottom: 32px;
+    position: relative;
+    z-index: 1;
+  }
+  section.recent-projects .container {
+    padding: 40px 0;
+  }
+  section.recent-projects .projects {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 16px;
+    color: #fff;
+  }
+  section.recent-projects .projects .project {
+    padding: 4rem 24px 32px 24px;
+    position: relative;
+    height: auto;
+    min-height: 16rem;
+    position: relative;
+  }
+  section.recent-projects .projects .project p {
+    position: relative;
+    z-index: 1;
+  }
+  section.recent-projects .projects .project a {
+    color: #fff;
+    display: flex;
+    gap: 0px;
+    font-weight: 600;
+    margin-top: 8px;
+    transition: all 0.2s ease;
+    align-content: center;
+    position: absolute;
+    left: 24px;
+    bottom: 16px;
+    z-index: 1;
+  }
+  section.recent-projects .projects .project a:hover {
+    gap: 3px;
+  }
+  section.recent-projects .projects .project-1 {
+    background: url("/assets/images/projects/amakpe-refinery.webp");
+  }
+  section.recent-projects .projects .project-2 {
+    background: url("/assets/images/projects/bonga.jpg");
+  }
+  section.recent-projects .projects .project-3 {
+    background: url("/assets/images/services/system-packages.jpg");
+  }
+  section.recent-projects .projects .project-4 a {
+    display: inline-flex;
+    margin: auto;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+  section.recent-projects .projects .project {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  section.recent-projects .projects .project:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(9, 29, 66, 0.7);
+    z-index: 0;
+  }
+}
+@media only screen and (max-width: 430px) {
+  section.clients img {
+    height: 24px;
+  }
+  section.clients .row-1, section.clients .row-2, section.clients .row-3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+  }
+  section.clients .client-6 {
+    background: #091D42;
+  }
+}
+@media only screen and (max-width: 350px) {
+  section.clients img {
+    height: 16px;
+  }
+  section.clients .row-1, section.clients .row-2, section.clients .row-3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+  }
+  section.clients .client-6 {
+    background: #091D42;
+  }
+}/*# sourceMappingURL=about-us.css.map */

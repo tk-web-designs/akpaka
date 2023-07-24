@@ -129,7 +129,7 @@ header .container #menuToggle.active .close {
 }
 
 section.hero {
-  background: url("/assets/images/services/hero.jpg");
+  background: url("../../assets/images/services/hero.jpg");
   position: relative;
 }
 section.hero:after {
@@ -372,13 +372,13 @@ footer .copyright {
     gap: 3px;
   }
   section.recent-projects .projects .project-1 {
-    background: url("/assets/images/projects/amakpe-refinery.webp");
+    background: url("../../assets/images/projects/amakpe-refinery.webp");
   }
   section.recent-projects .projects .project-2 {
-    background: url("/assets/images/projects/bonga.jpg");
+    background: url("../../assets/images/projects/bonga.jpg");
   }
   section.recent-projects .projects .project-3 {
-    background: url("/assets/images/services/system-packages.jpg");
+    background: url("../../assets/images/services/system-packages.jpg");
   }
   section.recent-projects .projects .project-4 {
     grid-column: 1/4;
@@ -458,12 +458,12 @@ footer .copyright {
     transition: all 0.7s ease;
   }
   section.hero .bg-1 {
-    background: url("/assets/images/home/hero-bg/1.jpg");
+    background: url("../../assets/images/home/hero-bg/1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
   section.hero .bg-2 {
-    background: url("/assets/images/services/opex.jpg");
+    background: url("../../assets/images/services/opex.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -478,7 +478,7 @@ footer .copyright {
     z-index: 1;
   }
   section.hero .bg-3 {
-    background: url("/assets/images/services/system-packages.jpg");
+    background: url("../../assets/images/services/system-packages.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -493,7 +493,7 @@ footer .copyright {
     z-index: 1;
   }
   section.hero .bg-4 {
-    background: url("/assets/images/services/supply-chain-services.jpg");
+    background: url("../../assets/images/services/supply-chain-services.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -508,7 +508,7 @@ footer .copyright {
     z-index: 1;
   }
   section.hero .bg-5 {
-    background: url("/assets/images/projects/amakpe-refinery.webp");
+    background: url("../../assets/images/projects/amakpe-refinery.webp");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -523,7 +523,7 @@ footer .copyright {
     z-index: 1;
   }
   section.hero .bg-6 {
-    background: url("/assets/images/projects/bonga.jpg");
+    background: url("../../assets/images/projects/bonga.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -661,13 +661,13 @@ footer .copyright {
     gap: 3px;
   }
   section.recent-projects .projects .project-1 {
-    background: url("/assets/images/projects/amakpe-refinery.webp");
+    background: url("../../assets/images/projects/amakpe-refinery.webp");
   }
   section.recent-projects .projects .project-2 {
-    background: url("/assets/images/projects/bonga.jpg");
+    background: url("../../assets/images/projects/bonga.jpg");
   }
   section.recent-projects .projects .project-3 {
-    background: url("/assets/images/services/system-packages.jpg");
+    background: url("../../assets/images/services/system-packages.jpg");
   }
   section.recent-projects .projects .project-4 {
     grid-column: 1/4;
@@ -806,12 +806,12 @@ footer .copyright {
     transition: all 0.7s ease;
   }
   section.hero .bg-1 {
-    background: url("/assets/images/home/hero-bg/1.jpg");
+    background: url("../../assets/images/home/hero-bg/1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
   section.hero .bg-2 {
-    background: url("/assets/images/services/opex.jpg");
+    background: url("../../assets/images/services/opex.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -826,7 +826,7 @@ footer .copyright {
     z-index: 1;
   }
   section.hero .bg-3 {
-    background: url("/assets/images/services/system-packages.jpg");
+    background: url("../../assets/images/services/system-packages.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -841,7 +841,7 @@ footer .copyright {
     z-index: 1;
   }
   section.hero .bg-4 {
-    background: url("/assets/images/services/supply-chain-services.jpg");
+    background: url("../../assets/images/services/supply-chain-services.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -856,7 +856,7 @@ footer .copyright {
     z-index: 1;
   }
   section.hero .bg-5 {
-    background: url("/assets/images/projects/amakpe-refinery.webp");
+    background: url("../../assets/images/projects/amakpe-refinery.webp");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -871,7 +871,7 @@ footer .copyright {
     z-index: 1;
   }
   section.hero .bg-6 {
-    background: url("/assets/images/projects/bonga.jpg");
+    background: url("../../assets/images/projects/bonga.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -956,13 +956,13 @@ footer .copyright {
     gap: 3px;
   }
   section.recent-projects .projects .project-1 {
-    background: url("/assets/images/projects/amakpe-refinery.webp");
+    background: url("../../assets/images/projects/amakpe-refinery.webp");
   }
   section.recent-projects .projects .project-2 {
-    background: url("/assets/images/projects/bonga.jpg");
+    background: url("../../assets/images/projects/bonga.jpg");
   }
   section.recent-projects .projects .project-3 {
-    background: url("/assets/images/services/system-packages.jpg");
+    background: url("../../assets/images/services/system-packages.jpg");
   }
   section.recent-projects .projects .project-4 {
     grid-column: unset;
@@ -1083,7 +1083,7 @@ footer .copyright {
     gap: 3px;
   }
   section.services .service-1 {
-    background: url("/assets/images/services/project-management.jpg");
+    background: url("../../assets/images/services/project-management.jpg");
   }
   section.services .service-1:after {
     content: "";
@@ -1096,7 +1096,7 @@ footer .copyright {
     z-index: 0;
   }
   section.services .service-2 {
-    background: url("/assets/images/services/system-packages.jpg");
+    background: url("../../assets/images/services/system-packages.jpg");
   }
   section.services .service-2:after {
     content: "";
@@ -1109,7 +1109,7 @@ footer .copyright {
     z-index: 0;
   }
   section.services .service-3 {
-    background: url("/assets/images/services/supply-chain-services.jpg");
+    background: url("../../assets/images/services/supply-chain-services.jpg");
   }
   section.services .service-3:after {
     content: "";
@@ -1122,7 +1122,7 @@ footer .copyright {
     z-index: 0;
   }
   section.services .service-4 {
-    background: url("/assets/images/services/opex.jpg");
+    background: url("../../assets/images/services/opex.jpg");
   }
   section.services .service-4:after {
     content: "";
@@ -1180,13 +1180,13 @@ footer .copyright {
     gap: 3px;
   }
   section.recent-projects .projects .project-1 {
-    background: url("/assets/images/projects/amakpe-refinery.webp");
+    background: url("../../assets/images/projects/amakpe-refinery.webp");
   }
   section.recent-projects .projects .project-2 {
-    background: url("/assets/images/projects/bonga.jpg");
+    background: url("../../assets/images/projects/bonga.jpg");
   }
   section.recent-projects .projects .project-3 {
-    background: url("/assets/images/services/system-packages.jpg");
+    background: url("../../assets/images/services/system-packages.jpg");
   }
   section.recent-projects .projects .project-4 a {
     display: inline-flex;

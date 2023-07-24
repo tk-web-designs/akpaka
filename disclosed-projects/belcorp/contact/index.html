@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Belcorp ISL</title>
+    <link rel="stylesheet" href="../assets/stylesheets/contact.css">
+    <link rel="shortcut icon" href="../assets/images/brand/icon.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/" id="logo"><img src="/assets/images/brand/logo.jpg" alt="Belcorp ISL logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../about-us">About Us</a></li>
+                    <li><a href="../services">Services</a></li>
+                    <li><a href="../project">Project</a></li>
+                    <li><a href="../news">News</a></li>
+                    <li><a href="../contact" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-nav">
+                <ul>
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../about-us">About Us</a></li>
+                    <li><a href="../services" class="active">Services</a></li>
+                    <li><a href="../project">Project</a></li>
+                    <li><a href="../news">News</a></li>
+                    <li><a href="../contact">Contact</a></li>
+                </ul>
+            </div>
+            <a href="#" id="menuToggle" onclick="toggleMenu()"><i class="bi bi-list open"></i><i class="bi bi-x-square close"></i></a>
+        </div>
+        <script>
+            function toggleMenu() {
+                const docBody = document.querySelector('body')
+                const menuToggle = document.querySelector('#menuToggle')
+                const mobileNav = document.querySelector('.mobile-nav')
+                docBody.classList.toggle('active-menu')
+                menuToggle.classList.toggle('active')
+                mobileNav.classList.toggle('active')
+            }
+        </script>
+    </header>
+
+
+
+
+    <section class="hero">
+        <div class="container">
+            <h1>CONTACT US</h1>
+        </div>
+    </section>
+
+
+
+
+    <section class="contact">
+        <div class="container">
+            <h2>Send us a message</h2>
+            <div class="content">
+                <form action="" method="post">
+                    <div class="input-box">
+                        <label for="name">Your Name (Required)</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Your Email (Required)</label>
+                        <input type="email" name="" id="email">
+                    </div>
+                    <div class="input-box">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject">
+                    </div>
+                    <div class="input-box">
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <button>SEND</button>
+                </form>
+                <div class="addresses">
+                    <div class="nigerian">
+                        <h4>Nigeria (Head Office)</h4>
+                        <div class="row-1">
+                            <i class="bi bi-geo-alt"></i>
+                            <p>Plot 23, Block 6 Rock Drive, 
+                                Lekki Phase I, Lagos.</p>
+                        </div>
+                        <div class="row-2">
+                            <i class="bi bi-envelope"></i>
+                            <a href="mailto:Info@belcorpisl.com">Info@belcorpisl.com</a>
+                        </div>
+                        <div class="row-3">
+                            <i class="bi bi-telephone"></i>
+                            <a href="tel:+2348050901990">+234 805 090 1990</a>
+                        </div>
+                    </div>
+                    <div class="american">
+                        <h4>United States</h4>
+                        <div class="row-1">
+                            <i class="bi bi-geo-alt"></i>
+                            <p>5006 Chappel Hill Drive,
+                                Missouri City, Houston, 
+                                Texas 77459.</p>
+                        </div>
+                        <div class="row-2">
+                            <i class="bi bi-envelope"></i>
+                            <a href="mailto:Info@belcorpisl.com">Info@belcorpisl.com</a>
+                        </div>
+                        <div class="row-3">
+                            <i class="bi bi-telephone"></i>
+                            <a href="tel:+12829695766">+1 282 969 5766</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="maps">
+        <div class="container">
+            <div class="row-1">
+                <h2>Nigeria (Head Office)</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.6427825068126!2d3.4670576106987063!3d6.4398993241020355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf452a26ccd3f%3A0xfdce550ae20d9278!2sPlot%2023%2C%20Block%2C%206%20The%20Rock%20Dr%2C%20Lekki%20Phase%201%20101003%2C%20Lekki%2C%20Lagos!5e0!3m2!1sen!2sng!4v1690163139808!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="row-2">
+                <h2>United States</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3470.312276642281!2d-95.58023458886895!3d29.565516040999796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640e5e8d2fb81ed%3A0x577d8bee95b0e3be!2s5006%20Chappel%20Hill%20Dr%2C%20Missouri%20City%2C%20TX%2077459%2C%20USA!5e0!3m2!1sen!2sng!4v1690163363907!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row-1">
+                <div class="col-1">
+                    <h5>SITE MAP</h5>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Our Services</a></li>
+                        <li><a href="">Projects</a></li>
+                        <li><a href="">Vision & Mission</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Our Clients</a></li>
+                        <div class="social-links">
+                            <li><a href=""><i class="bi bi-facebook"></i></a></li>
+                            <li><a href=""><i class="bi bi-twitter"></i></a></li>
+                            <li><a href=""><i class="bi bi-linkedin"></i></a></li>
+                            <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                            <li><a href=""><i class="bi bi-youtube"></i></a></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h5>DOWNLOADS</h5>
+                    <ul>
+                        <li><a href="">Our Profile</a></li>
+                        <li><a href="">Quality</a></li>
+                        <li><a href="">Health & Safety Policy</a></li>
+                        <li><a href="">Environmet Policy</a></li>
+                        <li><a href="">Business Ethics Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h5>CONTACT</h5>
+                    <ul>
+                        <li><i class="bi bi-geo-alt"></i>PLOT 6, BLOCK 23 ROCK DRIVE, LEKKI PHASE I, LAGOS</li>
+                        <li><a href="mailto:info@belcorpisl.com" class="a-link"><i class="bi bi-envelope"></i>info@belcorpisl.com</a></li>
+                        <li><a href="tel:+2348050901990"  class="a-link"><i class="bi bi-telephone"></i>+234 805 090 1990</a></li>
+                        <form action="/apps/newsletter" class="newsletter">
+                            <label for="email">SUBSCRIBE TO OUR NEWSLETTER</label>
+                            <input type="email" name="email" id="email">
+                            <button name="subscribe" value="subscribe">SUBSCRIBE</button>
+                        </form>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">
+                © 2023 BELCORP. ALL RIGHTS RESERVED
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

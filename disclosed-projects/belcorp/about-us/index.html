@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Belcorp ISL</title>
+    <link rel="stylesheet" href="../assets/stylesheets/about-us.css">
+    <link rel="shortcut icon" href="../assets/images/brand/icon.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/" id="logo"><img src="../assets/images/brand/logo.jpg" alt="Belcorp ISL logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../about-us" class="active">About Us</a></li>
+                    <li><a href="../services">Services</a></li>
+                    <li><a href="../project">Project</a></li>
+                    <li><a href="../news">News</a></li>
+                    <li><a href="../contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-nav">
+                <ul>
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../about-us/" class="active">About Us</a></li>
+                    <li><a href="../services">Services</a></li>
+                    <li><a href="../project">Project</a></li>
+                    <li><a href="../news">News</a></li>
+                    <li><a href="../contact">Contact</a></li>
+                </ul>
+            </div>
+            <a href="#" id="menuToggle" onclick="toggleMenu()"><i class="bi bi-list open"></i><i class="bi bi-x-square close"></i></a>
+        </div>
+        <script>
+            function toggleMenu() {
+                const docBody = document.querySelector('body')
+                const menuToggle = document.querySelector('#menuToggle')
+                const mobileNav = document.querySelector('.mobile-nav')
+                docBody.classList.toggle('active-menu')
+                menuToggle.classList.toggle('active')
+                mobileNav.classList.toggle('active')
+            }
+        </script>
+    </header>
+
+
+
+
+    <section class="hero">
+        <div class="container">
+            <h1>ABOUT <br>BELCORP ISL</h1>
+        </div>
+    </section>
+
+
+
+
+    <section class="stats">
+        <div class="container">
+            <div class="left"></div>
+            <div class="right">
+                <h2>First Class <span>Service </span>to<br>First Class <span>Customers</span></h2>
+                <h3>INDEGINOUS COMPANY FOR <span>NIGERIANS</span></h3>
+                <div class="stats stats-1">
+                    <h3>10+</h3>
+                    <p>CLIENTS</p>
+                </div>
+                <div class="stats stats-2">
+                    <h3>10+</h3>
+                    <p>COMPLETED PROJECTS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="about-us">
+        <div class="container">
+            <div class="left">
+                <h2>Our Company</h2>
+                <p>
+                    Belcorp exclusively provides first-class controls for first-class customers. We do not participate in the low quality end market or sell to customers who accept such equipment. We aim to be the lowest cost provider of excellent systems. 
+                    A while back, when we thought about setting up a business, we agreed upon a vision based on forward compatibility and sustainable expertise – which basically means capable of easy integration and scaling, as new and proven technologies emerge.
+                    To this end, we aim to be a company that’s an established part of the Industrial Internet Of Things (IIoT), throughout Nigeria and beyond. As a cloud-based enterprise, we see the safe and proven integration of digital technologies throughout the Oil, Gas & Energy Industries as the cornerstone of both our national and commercial futures and our positive progress throughout West Africa.
+                </p>
+
+            </div>
+            <div class="right">
+                <img src="/assets/images/home/about-us/image-1.jpg" alt="">
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="mission">
+        <div class="container">
+            <div class="m1">
+                <h5>Our Vision</h5>
+                <p>We strongly believe that  a digital industrial Nigeria is upon us which will come to full life over the next 25yrs, hopefully much sooner, given the combined will of government and industry. This is our view of what the future holds and we want to play our part in it</p>
+            </div>
+            <div class="m2">
+                <h5>Our Mission</h5>
+                <p>Our mission is to surge Nigeria’s progression to a fully fledged digital industrial ecosystem.</p>
+            </div>
+            <div class="m3">
+                <h5>Core Values</h5>
+                <ul>
+                    <li>Integrity</li>
+                    <li>Innovation</li>
+                    <li>Excellence at a fair price.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="approach">
+        <div class="container">
+            <h2>Our Approach</h2>
+            <h3>The Pareto Principle</h3>
+            <div class="content">
+                <div class="left">
+                    <p><strong>For those not familiar with this principle, it permeates pretty much every aspect of human endeavour. For example, research has show that 20% of sales people bring in 80% of orders; of the life cycle cost of equipment, 20% covers ownership and 80% covers operation.</strong></p>
+                    <p>In a nutshell, 20% of effort can get you 80% of results – however, it does require some dedicated research and analysis, in order to determine what specific areas of OG&E exhibit the 80/20 characteristic reflected in Pareto’s Principle.</p>
+                    <p class="exception">This is what seriously interests us. Knowing the level of savings in labor and operating costs that are possible means we can provide better Customer value. Our mission is not simply to provide better value, but <strong>BEST CUSTOMER VALUE</strong>, and in two fundamental ways:</p>
+                    <ul>
+                        <li>By proposing improvements, based on our knowledge and international experience</li>
+                        <li>By maintaining a cost-competitive life-cycle-edge in every project we’re involved</li>
+                    </ul>
+                    <p>Bottom line – by satisfying an agreement beyond the expectations of our customers.</p>
+                </div>
+                <div class="right">
+                    <img src="/assets/images/about-us/pareto-principle.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="staff">
+        <div class="container">
+            <div class="content">
+                <div class="staff staff-1">
+                    <img src="/assets/images/staff/Rodney-Rather.jpg" alt="" onclick="showStaffDetails('.staff-1')">
+                    <h5 class="name">Chuck Umeh</h5>
+                    <p class="position">Managing Director</p>
+                    <strong class="details">Holds a Bachelors and Masters Degree in Control Systems Engineering Technology and Microcomputer Systems respectively from University of Houston, TX USA. Mr. Umeh has over eighteen years of technical experience with control and instrument systems, both hardware and software, across all project phases Predominant experience specific to oil & gas industry, both in-office and on-site, occurring at locations spanning the globe: Africa, Europe, South America and North America.</strong>
+                    <div class="social-icons">
+                        <a href="#"><img src="/assets/images/icons/facebook.png" alt=""></a>
+                        <a href="#"><img src="/assets/images/icons/linkedin.png" alt=""></a>
+                        <a href="#"><img src="/assets/images/icons/twitter.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="staff staff-2">
+                    <img src="/assets/images/staff/Rodney-Rather.jpg" alt="">
+                    <h5 class="name">Tom McCormack</h5>
+                    <p class="position">Technical Director</p>
+                    <strong class="details">A professional Engineer with over 35 years experience, specializing in instrumentation and control systems. Successfully held senior positions as Company Director, Group Manager, Project Manager, Head of Department, Lead Engineer, Consultant, Construction and Commissioning Supervisor while working with a wide range of nationalities and regional capabilities. Competency gained at various levels in all aspects of project engineering work from concept to handover and warranty support.</strong>
+                    <div class="social-icons">
+                        <a href="#"><img src="/assets/images/icons/facebook.png" alt=""></a>
+                        <a href="#"><img src="/assets/images/icons/linkedin.png" alt=""></a>
+                        <a href="#"><img src="/assets/images/icons/twitter.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="staff staff-3">
+                    <img src="/assets/images/staff/Rodney-Rather.jpg" alt="">
+                    <h5 class="name">Rodney Rather</h5>
+                    <p class="position">Houston Regional Manager</p>
+                    <strong class="details">Degreed in Civil Engineering, worked as the Vice President of Operations for Mammoet and ALE Heavylift for 21 years. He is an expert in equipment sourcing, heavy lift, heavy transportation and logistics. He is the founder of Construction Equipment Depot in Houston, TX USA. Rodney coordinates our supply chain operations in the USA and has worked to develop excellent relationships with the original equipment manufacturers and major distributors. This has resulted in a significant reduction in costs and increase in delivery times for our projects that we transfer directly to our clients. Rodney has an art to locating and procuring difficult items in short supply with reputable companies.</strong>
+                    <div class="social-icons">
+                        <a href="#"><img src="/assets/images/icons/facebook.png" alt=""></a>
+                        <a href="#"><img src="/assets/images/icons/linkedin.png" alt=""></a>
+                        <a href="#"><img src="/assets/images/icons/twitter.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="staff staff-4">
+                    <img src="/assets/images/staff/Stanley-Egbo.jpg" alt="">
+                    <h5 class="name">Stanley Egbo</h5>
+                    <p class="position">Executive Director, Sales</p>
+                    <strong class="details">Co-founder and Chief Executive Officer of PSI Group of more than 10 companies. His ideas and business practices are revolutionary and are impacting global logistics, real estate and marine business in the Oil, Gas and Energy sector. Stanley joined the board of Belcorp in 2018</strong>
+                    <div class="social-icons">
+                        <a href="#"><img src="/assets/images/icons/facebook.png" alt=""></a>
+                        <a href="#"><img src="/assets/images/icons/linkedin.png" alt=""></a>
+                        <a href="#"><img src="/assets/images/icons/twitter.png" alt=""></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row-1">
+                <div class="col-1">
+                    <h5>SITE MAP</h5>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Our Services</a></li>
+                        <li><a href="">Projects</a></li>
+                        <li><a href="">Vision & Mission</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Our Clients</a></li>
+                        <div class="social-links">
+                            <li><a href=""><i class="bi bi-facebook"></i></a></li>
+                            <li><a href=""><i class="bi bi-twitter"></i></a></li>
+                            <li><a href=""><i class="bi bi-linkedin"></i></a></li>
+                            <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                            <li><a href=""><i class="bi bi-youtube"></i></a></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h5>DOWNLOADS</h5>
+                    <ul>
+                        <li><a href="">Our Profile</a></li>
+                        <li><a href="">Quality</a></li>
+                        <li><a href="">Health & Safety Policy</a></li>
+                        <li><a href="">Environmet Policy</a></li>
+                        <li><a href="">Business Ethics Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h5>CONTACT</h5>
+                    <ul>
+                        <li><i class="bi bi-geo-alt"></i>PLOT 6, BLOCK 23 ROCK DRIVE, LEKKI PHASE I, LAGOS</li>
+                        <li><a href="mailto:info@belcorpisl.com" class="a-link"><i class="bi bi-envelope"></i>info@belcorpisl.com</a></li>
+                        <li><a href="tel:+2348050901990"  class="a-link"><i class="bi bi-telephone"></i>+234 805 090 1990</a></li>
+                        <form action="/apps/newsletter" class="newsletter">
+                            <label for="email">SUBSCRIBE TO OUR NEWSLETTER</label>
+                            <input type="email" name="email" id="email">
+                            <button name="subscribe" value="subscribe">SUBSCRIBE</button>
+                        </form>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">
+                © 2023 BELCORP. ALL RIGHTS RESERVED
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
